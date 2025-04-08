@@ -1,0 +1,39 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+/* 모든태그는 body태그로 감싸여있음. 그래서 body태그에 적용한 글자관련 스타일은
+body태그 안에 있는 하위 태그들이 상속 받음.*/
+body {font-family:Pretendard, sans-serif ;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #555555;
+    font-weight: 400;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+    /*가운데정렬*/
+}
+h1{
+    font-size: 50px;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+h2{
+    font-size: 35px;
+    color: #002f87;
+    font-weight: 700;
+}
+.future {
+    background-color: #f4f4f4;
+    text-align: center;
+
+}
+.tit {
+    font-size: 17px;
+    color: #002f87;
+    font-weight: 400;
+}
+.sub_tit{
+    font-size: 50px;
+    color: #1d1d1d;
+    line-height: 1.2;
+}
