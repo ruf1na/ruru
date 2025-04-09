@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'PT';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+/* local은 내 컴퓨터에 프리텐다드가 깔려있다면 그걸 먼저 쓰라는 말,폴더 밖으로 나가서 다른 파일 찾을때(../)*/
+}
+@font-face {
+	font-family: 'PT';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../font/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard-Bold.woff) format('woff');
+/* local은 내 컴퓨터에 프리텐다드가 깔려있다면 그걸 먼저 쓰라는 말,폴더 밖으로는(../)*/
+}
+body {
+    /*sans-serif 고딕 serif 명조-고딕체*/
+    font-family:'PT', sans-serif;
+    font-size: 17px;
+    color: #555555;
+    font-weight: 400; /*굵기*/
+    line-height: 1.5; /*행간*/
+    word-break: keep-all;/* 줄 바꿈시 단어 단위로 줄 바꿔줌.*/
+    margin: 0;
+    padding: 0;
+    /*내가 준 여백 아닌걸 빼려면 margin,padding 둘 다 0으로 뺌*/
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; 
+    /*1260px 그리드 여백제한*/
+}
+.about {
+    text-align: center;
+}
+.about h1 {
+/* 자손 선택.*/
+    font-size: 50px;
+    color: #1d1d1d;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    margin: 124px 0 25px 0;
+    /* 마진 맨 처음 숫자 위여백,오,아래,왼*/
+}
+.about p {
+    margin: 0;
+}
+.about .photo {
+    margin: 58px 0 0 0;
+}
+.invest h1 {
+    font-size: 17px;
+    color: #00a384;
+    font-weight: 400;  
+    margin: 120px 0 17px 0;
+}
+.invest p {
+    font-size: 50px;
+    color: #1d1d1d;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    /* 자간 -30을 -0.03 em으로 표시 (감으로 함)*/
+    margin: 0;
+}
+.invest p strong {
+    color: #00a384;
+    font-weight: 700;
+}
