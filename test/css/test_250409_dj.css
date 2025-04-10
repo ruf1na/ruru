@@ -13,7 +13,7 @@ body{
 }
 .about {
     background-image: url(../images/about_bg.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*이미지 반복이 기본값이여서 이미지 사이즈 보다 공백이 생기면 반복되는데, 이걸 막아주는 과정*/
     background-position: center center;
     height: 525px;
     color: #ffffff;
@@ -23,4 +23,15 @@ body{
     font-size: 60px;
     padding: 155px 0 32px 0;
     /*margin 해 보고 여백이 바깥으로 나갈땐 padding(내부여백)으로 하면 됨*/
+}
+.grow h1{
+    font-size: 60px;
+    color: #1d1d1d;
+    font-weight: 700;
+    margin: 155px 0 32px 0;
+    text-align: center; /*가운데 정렬*/
+}
+.grow p{
+    margin: 0 0 155px ;
+    text-align: center;
 }
