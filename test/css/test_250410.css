@@ -12,6 +12,8 @@ body{
 * {
     margin: 0; /*브라우저가 주는 기본 값 여백 다 지우고, 내가 지정하는 여백만 넣을 것.*/
     padding: 0;
+    box-sizing: border-box;
+    /* width넓이/height높이 와 padding여백 을 같이주면 사이즈가 늘어감-이 현상을 막아주는 속성 */
 }
 h1,h2,h3,h4,h5,h6 {
     font-size: inherit;/*inherit-브라우저가 주는 기본 값 말고, 내가 선언한 값을 받도록 해주는 것*/
@@ -46,7 +48,8 @@ a {
     padding: 163px 0 0 0; /*margin했을때 안되서 padding, 우선 margin으로 하고 바꾸기*/
 }
 .esg .sub_tit,
-.int .sub_tit {
+.int .sub_tit,
+.mission .sub_tit {
     font-size: 50px;
     font-weight: 700;
     line-height: 1.3;
@@ -61,7 +64,7 @@ a {
 }
 
 .int {
-    margin: 146px 0 200px 0;
+    margin: 146px 0 0 0;
 }
 .int h1 {
     color: #1d1d1d;
@@ -80,4 +83,26 @@ a {
 .int ul li strong {
     color: #1d1d1d;
     font-weight: 700;
+}
+.mission {
+    margin: 157px 0 200px 0;
+}
+.mission .inner {
+    background-image: url(../images/mission_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 507px ;
+    color: #fff;
+    padding: 114PX 0 0 68PX;
+}
+.mission .cnt{
+    color: rgba(255,255,255,0.8);/* opacity80%*/
+}
+section {
+    border-color: #1d1d1d;
+    background-color: #1d1d1d;
+}
+h2 {
+    border: dddddddddwss;
 }
