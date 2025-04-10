@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #555555;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    word-break: keep-all;/*단어 기준 줄바꿈*/
+}
+/* START 태그 스타일의 초기화(브라우저가 준 스타일을 삭제)*/
+* {
+    margin: 0; /*브라우저가 주는 기본 값 여백 다 지우고, 내가 지정하는 여백만 넣을 것.*/
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;/*inherit-브라우저가 주는 기본 값 말고, 내가 선언한 값을 받도록 해주는 것*/
+    font-weight: inherit;
+}
+strong {
+    font-weight: inherit;
+}
+li {
+    list-style: none;/*li앞에 순서대로 나열되는 동그라미 삭제*/
+}
+a {
+    color: inherit; /* 상속받으란 뜻 - 링크 연결 색깔 빼기 */
+    text-decoration: none; /* 밑줄 삭제 */
+}
+/* END 태그 스타일의 초기화(브라우저가 준 스타일을 삭제)*/
+
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.esg {  
+    background-image: url(../images/esg_bg.png);
+    background-position: center center; /*이미지 가운데로 주는 법, 브라우저 사이즈 줄어들면 배경 죄우가 줄어들게끔.*/
+    background-repeat: no-repeat;
+    background-size: cover; /*지정 사이즈가 배경 꽉차게 도와줌(실수로 높이지정 했을때 공백이 생기는데 그걸 막아주기위해 기본으로 주는편.*/
+    height: 772px;
+    color: #fff;
+}
+.esg h1 {
+    padding: 163px 0 0 0; /*margin했을때 안되서 padding, 우선 margin으로 하고 바꾸기*/
+}
+.esg .sub_tit,
+.int .sub_tit {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.03em;/*자간 서체마다 다름, 이건-30*/
+    margin: 50px 0 50px 0;
+}
+.esg .more a {
+    border: 1px solid #fff; /*solid-실선*/
+    border-radius: 26px;/*모서리 둥글게*/
+    padding: 15px 46px 15px 46px;
+    display: inline-block; /*a 태그 만나면 bock을 기본으로 우선주고, 이상하면 inline-bock준다고 생각하면 편함.*/
+}
+
+.int {
+    margin: 146px 0 200px 0;
+}
+.int h1 {
+    color: #1d1d1d;
+}
+.int .sub_tit {
+    color: #1d1d1d;
+}
+.int ul {
+    margin: 50px 0 0 0;
+}
+.int ul li {
+    font-size: 20px;
+    border-bottom: 1px #ccc solid; /*밑줄 그어주는 태그*/
+    padding: 12px 0 12px 0; /*margin 해보고 안되서 padding사용*/
+}
+.int ul li strong {
+    color: #1d1d1d;
+    font-weight: 700;
+}
