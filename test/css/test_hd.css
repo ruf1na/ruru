@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body {
+    font-family: "Noto Sans KR", sans-serif;;
+    color: #555;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-break: keep-all;
+}   
+
+/***********기본값 초기화 시작*************/
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+strong {
+    font-weight: inherit;
+}
+li {
+    list-style: none;
+}
+/***********기본값 초기화 끝*************/
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /*가운데 정렬*/
+}
+.esg{
+    background-image: url(../images/esg_bg.png);
+    background-position: center center;/*이미지 가운데 정렬*/
+    background-repeat: no-repeat; /*이미지 반복 없이*/
+    background-size: cover; /*이미지 높이 잘못 측정 했을때 이미지 사이즈만큼 커버해줌*/
+    height: 772px;/*이미지 높이*/
+}
+.esg h1 {
+    font-size: 17x;
+    font-weight: 500;
+    color: #fff;
+    padding: 160px 0 20px 0 ;
+}
+.esg p {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
