@@ -20,7 +20,7 @@ li {
     padding: 0;
     box-sizing: border-box; /**/
 } 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -126,8 +126,8 @@ a{
 }
 .btn .btn_wrap a {
     color: #fff;
-    display: block;
-    padding: 9px 20px ; /**a뒤에 항상 주기**/
+    display: block; /**a뒤에 항상 주기**/
+    padding: 9px 20px ; 
 }
 .btn .btn_wrap a.all {
     background-color: #3d3d3d;

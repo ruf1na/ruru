@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;/*높이,넓이 지정 후 패딩을 같이 주게되는 경우 여백이 늘어나는 현상 발생. 그 현상을 막아주는 작업.*/
 }
 a {
     color: inherit;
@@ -40,16 +41,64 @@ li {
     background-size: cover; /*이미지 높이 잘못 측정 했을때 이미지 사이즈만큼 커버해줌*/
     height: 772px;/*이미지 높이*/
 }
-.esg h1 {
+.esg .wrapper h1{
     font-size: 17x;
     font-weight: 500;
-    color: #fff;
-    padding: 160px 0 20px 0 ;
+    color: #ffffff;
+    padding: 160px 0 0 0;
 }
-.esg p {
+.esg .wrapper p,
+.Mission .wrapper .sub_tit {
     color: #fff;
     font-size: 50px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 50px 0 47px 0;
     line-height: 1.2;
+    padding: 30px 0 0 0;
 }
+.esg .more{
+    color: #fff;
+    border: solid 1px #fff;/*테두리*/
+    display: inline-block; /*a태그 만나면 우선 주고 가는 기본 값*/
+    border-radius: 30px;
+    padding: 15px 43px 15px 43px;
+}
+.wrapper .tit {
+    margin: 160px 0 43px 0;
+    color: #1d1d1d;
+}
+.int .sub_tit {
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 65px 0;
+}
+.int ul {
+    margin: 72px 0 0 0;
+    font-size: 20px;
+}
+.int ul li {
+    padding: 12px 0 12px 0;
+    list-style-type: ;
+    border-bottom: solid 1px  #ccc;
+}
+.int .wrapper strong {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+.Mission {
+    margin: 300px 0 200px 0;
+}
+.Mission .inner {
+    background-image: url(../images/hd2.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0 0 60px;
+}
+.Mission .wrapper p {
+    color: rgba(255, 255, 255, 0.8);
+}/*불명도 조절*/

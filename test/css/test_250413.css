@@ -1,0 +1,142 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: #3d3d3d;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+/*초기화 시작*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*기본값으로 같이 설정해주기*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*초기화 끝*/
+
+.wrapper { /*가운데정렬*/
+    width: 1260px;
+    margin: 0 auto;
+}
+.color {
+    margin: 130px 0 0 0;
+}
+.color .tit h1 {
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 42px 0;
+}
+.color .list {
+    margin: 50px 0 0 0;    
+}
+.color .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.color .list ul li {
+    width: 297px;
+}
+.color .list ul li h2 {
+    color: #fff;
+    height: 330px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px 0 0 10px;
+}
+.color .list ul li.item1 h2 {
+    background-color: #4daa39;
+    color: #fff;
+}
+.color .list ul li.item2 h2 {
+    background-color: #38803d;
+    color: #fff;
+}
+.color .list ul li.item3 h2 {
+    background-color: #102f82;
+    color: #fff;
+}
+.color .list ul li.item4 h2 {
+    background-color: #0b2451;
+    color: #fff;
+}
+.color .list ul li p {
+    margin: 15px 0 0 10px;
+}
+.int  {
+    margin: 120px 0 0 0;
+}
+.int h1,
+.int .tit .sub_tit {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.int .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.int .inner {
+    width: 616px;
+}
+.int .tit .sub_tit {
+    margin: 0 0 45px 0;
+}
+.int .list {
+    margin: 45px 0 0 0;
+}
+.int .list ul li strong {
+    font-weight: 700;
+    color: #1d1d1d;
+    width: 222px;
+    display: block;
+}
+.int .list ul li {
+    display: flex;
+    border-bottom: #1d1d1d solid 1px;
+    padding: 22px 0;
+}
+.int .list ul li:first-child {
+    border-top: #1d1d1d solid 1px;
+}
+.btn h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 120px 0 50px 0;
+}
+
+.btn .btn_wrap {
+    display: flex;
+    gap: 10px; /*flex사이 여백 조정*/
+}
+.btn .btn_wrap a {
+    display: block;
+    color: #fff;
+    padding: 9px 20px;
+}
+.btn .btn_wrap .all {
+    background-color: #3d3d3d;
+}
+.btn .btn_wrap .cancel {
+    background-color: #38803d;
+}
+.btn .btn_wrap .ok {
+    background-color: brown;
+}
+body {
+    margin: 0 0 200px;
+}
