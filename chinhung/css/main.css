@@ -31,6 +31,11 @@ a {
     width: 1260px;
     margin: 0 auto;/*가운데 정렬*/
 }
+header {
+    height: 100px;
+    /*header는 대부분 디자인한 높이를 잡아주고 코딩 시작.
+    -heabder에 존재하는 것이 많아서*/
+}
 header .wrapper {
     display: flex;
     /*log랑 gnb 좌우로 배치*/
@@ -43,4 +48,99 @@ header .logo a img {
     width: 176px;
     /*이미지는 넓이나 높이 둘중 하나만 주면 나머지는 비율에 맞게 조정됨.*/
     /*둘 다 줄 경우에 오히려 비율이 깨짐.*/
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul a { 
+    display: block;
+    font-size: 24px;
+    color: #1d1d1d;
+    padding: 29px 37px 35px 29px;/*버튼 영역이 커야지 이용자에게 불편함 없음.*/
+    /*내가 디자인한 해더 높이보다 a의 높이가 더 넓어선 안됨, 확인 하면서 값 주기*/
+}
+
+.visual {
+    background: url(../images/visual_bg.png) no-repeat center center / cover;
+/********* background 한번에 정의                반복     좌우   아래    크기*/
+    height: 800px;
+    color: #fff;
+    text-align: right;
+}
+.visual h2 {
+    font-size: 90px;
+    padding: 324px 0 15px 0;
+    line-height: 1.05;
+}
+.visual p {
+    font-size: 24px;
+}
+
+.biz {
+    margin: 190px 0 0 0 ; 
+}
+.biz .tit h2 {
+    color: #0f3569;
+    font-weight: 700;
+    
+}
+.biz .tit p {
+    color: #1d1d1d;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0 76px 0;
+}
+.biz .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz .list ul li {
+    width: 297px; /**크기 동일하게 맞춰줌**/
+}
+.biz .list ul li a {
+    display: block; /*a의 필수 값*/
+    text-align: center;
+}
+.biz .list ul li h3 {
+    color: #1d1d1d;
+    line-height: 1.2;
+    font-size: 30px;
+    margin: 33px 0 20px 0;
+}
+.biz .list ul li a .more {
+    border: 1px #cccccc solid;
+    display: block; /*블럭 크기*/
+    padding: 15px 0;
+    margin: 24px 0 0 0;
+}
+
+.brand {
+    background: url(../images/brand_dg.png) no-repeat center center/cover;
+    margin: 170px 0 0 0;
+    height: 919px;
+    color: rgba(255, 255, 255, 0.8); /*흰색 rgb코드값 255- opacity 80%*/
+}
+.brand h2 {
+    color: #fff;
+    font-weight: 700;
+    padding: 297px 0 0 0;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+.brand .sub_tit {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 71px 0;
+}
+.brand .cont {
+    border-top: 1px rgba(255,255,255,0.2) solid;
+    padding: 26px 0 0 0;
+}
+
+footer {
+    margin: 400px 0 0 0;
 }
